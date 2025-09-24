@@ -3,9 +3,7 @@
     "name": "ttree/dimensionkeeper",
     "type": "neos-package",
     "license": "MIT",
-    "require": {
-            "neos/content-repository": "^9.0"
-    },
+    "require": { },
     "autoload": {
         "psr-4": {
             "Ttree\\DimensionKeeper\\": "Classes/"

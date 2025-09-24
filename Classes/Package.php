@@ -11,6 +11,6 @@ class Package extends BasePackage
     {
         $dispatcher = $bootstrap->getSignalSlotDispatcher();
 
-        $dispatcher->connect(Node::class, 'nodePropertyChanged', Keeper::class, 'sync');
+        $dispatcher->connect(\Neos\ContentRepository\Core\Projection\ContentGraph\Node::class, 'nodePropertyChanged', Keeper::class, 'sync');
     }
 }
